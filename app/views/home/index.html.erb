@@ -1,0 +1,18 @@
+
+<div class="container-form">
+  <div class="box box-mine_shaft">
+    <div class="box-header">
+      <label><strong>Client Home</strong></label>
+    </div>
+
+    <div class="box-body">
+      <p><%= current_user&.email %></p>
+
+      <div class="box-button">
+        <p><%= link_to "<i class='fas fa-sign-in-alt fa-fw'></i> Server".html_safe, user_codingmart_omniauth_authorize_path, class: "btn-webgoal btn-atlantis" %></p>
+        <p><%= link_to "<i class='fas fa-sign-in-alt fa-fw'></i> Local".html_safe,    new_user_session_path,                class: "btn-webgoal btn-mojo"%></p>
+        <p><%= link_to "<i class='fas fa-sign-out-alt fa-fw'></i> Logout".html_safe,    logout_path,                          class: "btn-webgoal btn-pizazz"%></p>
+      </div>
+    </div>
+  </div>
+</div>
